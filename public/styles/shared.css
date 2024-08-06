@@ -1,14 +1,17 @@
 body {
   background-color: rgb(7, 2, 25);
   background-color: gray;
+  background-attachment: fixed;
   text-align: center;
+  width: 100%;
+  margin: 0;
   margin-bottom: 100px;
   flex-wrap: nowrap;
 }
 
 header {
   margin: 50px;
-  margin-bottom: 15px;
+  margin-bottom: 0;
   margin-top: 15px;
   display: flex;
   flex-direction: row;
@@ -18,9 +21,9 @@ header {
 }
 
 header ul {
-  border-radius: 20px;
+  border-radius: 50px;
   list-style-type: none;
-  padding: 5px 5px 5px 0;
+  padding: 0.5rem 1rem 0.3rem 0.1rem;
   margin-bottom: 0px;
   border: solid white;
   background-color: white;
@@ -85,8 +88,6 @@ header p {
 }
 
 main {
-  margin-left: -8px;
-  margin-right: -8px;
   margin-bottom: 50px;
   width: 100%;
   background-image: url("/images/background.jpg");

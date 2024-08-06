@@ -25,7 +25,6 @@ header #back {
   border-radius: 10px;
   font-family: "Shrikhand", serif;
   font-size: 36px;
-  height: 3.5rem;
   width: 6.5rem;
   margin-left: 5rem;
 }
@@ -38,7 +37,7 @@ header #back:hover {
 #round-management {
   list-style: none;
   position: relative;
-  top: 5rem;
+  top: 1rem;
   display: grid;
   grid-template-columns: repeat(2, 40rem);
   grid-template-rows: repeat(2, 14rem);
@@ -67,7 +66,6 @@ main {
 }
 
 .test-name-display {
-  margin-top: -1rem;
   font-family: "Shrikhand", serif;
   font-size: 72px;
   color: gold;
@@ -77,10 +75,11 @@ main {
 
 #header-test-editor {
   position: relative;
-  top: 2rem;
+  top: -1rem;
   display: grid;
-  grid-template-columns: repeat(3, 20rem);
+  grid-template-columns: repeat(3, 18rem);
   justify-content: center;
   gap: 16rem;
   margin-bottom: 0;
+  align-items: center;
 }

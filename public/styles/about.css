@@ -4,6 +4,10 @@
   border-radius: 20px;
 }
 
+header {
+  margin-bottom: 1rem;
+}
+
 main {
   height: 950px;
 }

@@ -1,6 +1,24 @@
 h1 {
   text-align: center;
-  color: rgb(99, 92, 86);
+  color: white
+}
+
+body {
+  background-image: url("/images/background.jpg");
+  margin: 0;
+}
+
+header {
+  margin-top: 1rem;
+}
+
+header #logo {
+  color: white;
+}
+
+main {
+  background-image: none;
+  margin-top: 5rem;
 }
 
 form {
