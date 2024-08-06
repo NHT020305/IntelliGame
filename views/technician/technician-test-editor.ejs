@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/images/favicon1.ico" type="images/x-icon" />
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <link rel="stylesheet" href="/styles/technician-main.css" />
+    <link
+      rel="stylesheet"
+      href="/styles/technician-management.css"
+    />
+    <title>Contest Management | IntelliGame</title>
+  </head>
+  <body>
+    <header id="header-test-editor">
+      <a href="/" id="logo">IntelliGame</a>
+      <h1 class="test-name-display"><%= test.name %></h1>
+      <a href="/technician-upload" class="button-header" id="back">Back</a>
+    </header>
+    <main>
+      <ul id="round-management">
+        <li>
+          <a
+            href="/"
+            class="technician-home"
+            >Warmup</a
+          >
+        </li>
+        <li>
+          <a
+            href="/"
+            class="technician-home"
+            >Obstacle</a
+          >
+        </li>
+        <li>
+          <a
+            href="/technician-upload/<%= test._id %>/acceleration"
+            class="technician-home"
+            >Acceleration</a
+          >
+        </li>
+        <li>
+          <a
+            href="/"
+            class="technician-home"
+            >Finish</a
+          >
+        </li>
+      </ul>
+    </main>
+    <!--<footer>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/"
+              ><img src="/images/facebook_1384005.png"
+            /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/"
+              ><img src="/images/insta.png"
+            /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/"
+              ><img src="/images/youtube-512.webp"
+            /></a>
+        </li>
+      </ul>
+      <p>Orbital 2024 - 2P1G5</p>
+    </footer> -->
+  </body>
+</html>

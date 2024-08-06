@@ -1,0 +1,19 @@
+body {
+  margin-bottom: 8rem;
+}
+
+#answer-record {
+  margin-top: 5rem;
+  margin-left: 2.5rem;
+}
+
+#player-score-warmup-technician {
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+  margin-left: 4rem;
+}
+
+#player-score-warmup-technician div {
+  margin-bottom: 3rem;
+  width: 80rem;
+}

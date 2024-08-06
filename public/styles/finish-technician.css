@@ -1,0 +1,22 @@
+body {
+  margin-bottom: 8rem;
+}
+
+.question-score-timer {
+  margin-top: 4rem;
+}
+
+.question-board {
+  height: 15rem;
+}
+
+#player-score-warmup-technician {
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+  margin-left: 4rem;
+}
+
+#player-score-warmup-technician div {
+  margin-bottom: 3rem;
+  width: 80rem;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/images/favicon1.ico" type="images/x-icon" />
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <link rel="stylesheet" href="/styles/technician-main.css" />
+    <title>Technician page | IntelliGame</title>
+  </head>
+  <body>
+    <header>
+      <a href="/" id="logo">IntelliGame</a>
+      <nav>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/about">Explore</a></li>
+          <% if (locals.isAuth) { %>
+            <li>
+              <form action="/logout" method="POST">
+                <input type="hidden" name="_csrf" value="<%= locals.csrfToken %>" />
+                <button>Logout</button>
+              </form>
+            </li>
+          <% } %>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <ul>
+        <li>
+          <a
+            href="/technician-upload"
+            class="technician-home"
+            >Uploaded tests</a
+          >
+        </li>
+        <li>
+          <a
+            href="/technician-management"
+            class="technician-home"
+            >Contest Management</a
+          >
+        </li>
+      </ul>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <!--<a href="https://www.facebook.com/"
+              ><img src="/images/facebook_1384005.png"
+            /></a>-->
+        </li>
+        <li>
+          <!--<a href="https://www.facebook.com/"
+              ><img src="/images/insta.png"
+            /></a>-->
+        </li>
+        <li>
+          <!--<a href="https://www.facebook.com/"
+              ><img src="/images/youtube-512.webp"
+            /></a>-->
+        </li>
+      </ul>
+      <p>Orbital 2024 - 2P1G5</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/images/favicon1.ico" type="images/x-icon" />
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <link
+      rel="stylesheet"
+      href="/styles/technician-upload.css"
+    />
+    <title>Document</title>
+  </head>
+  <body id="body-upload">
+    <header>
+      <a href="/" id="logo">IntelliGame</a>
+      <form id="upload-test" action="/technician-upload" method="POST">
+        <input type="hidden" name="_csrf" value="<%= locals.csrfToken %>">
+        <button type="submit" class="button-header" id="upload">Add TEST</button>
+        <p class="test-information">
+          <label for="testName">Test name:</label>
+          <input type="testName" id="testName" name="testName" maxlength="8" required />
+        </p>
+      </form>
+      <a href="/technician-main" class="button-header" id="back">Back</a>
+    </header>
+    <main>
+      <ul id="test-list">
+        <% for (const test of tests) { %> <%-
+        include('../shared/includes/test-item.ejs', { test : test }) %> <% } %>
+      </ul>
+    </main>
+  </body>
+</html>

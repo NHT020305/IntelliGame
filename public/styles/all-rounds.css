@@ -1,0 +1,315 @@
+body {
+  margin: 0;
+  background-image: url("/images/all-rounds-background.jpg");
+  background-size: cover;
+  margin-bottom: 5rem;
+}
+
+main {
+  height: auto;
+  margin: 0;
+  background-image: none;
+}
+
+main h1 {
+  text-transform: uppercase;
+  padding: 1rem;
+  width: 50rem;
+  margin: 2rem 21rem;
+  border-radius: 10px;
+  color: white;
+  background-color: purple;
+  border: 2px solid white;
+}
+
+.question-score-timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem;
+}
+
+/* Question board properties */
+.question-board {
+  width: 55rem;
+  height: 18rem;
+  padding: 1rem 1rem;
+  margin: 2rem 2rem;
+  border-radius: 6px;
+  box-shadow: 5px 5px 2px rgba(255, 255, 255, 0.2);
+  font-size: 1.5rem;
+  background-color: red;
+  color: white;
+  text-align: left;
+}
+
+/* Statistics (order of questions, turns, etc.) */
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0;
+  color: white;
+}
+
+.timer {
+  font-family: "Orbitron", sans-serif;
+  font-size: 3rem;
+  padding: 2rem;
+  margin: 0;
+  border-radius: 6.75rem;
+  background-color: gray;
+}
+
+.question-bar {
+  font-size: 1.5rem;
+  width: 70rem;
+  height: 2rem;
+  border-radius: 6px;
+  background-color: brown;
+  color: white;
+}
+
+.answer-bar {
+  font-size: 1.5rem;
+  width: 90rem;
+  height: 5rem;
+  border-radius: 6px;
+  background-color: wheat;
+  color: black;
+}
+
+.answer-board {
+  width: 55rem;
+  height: 15rem;
+  padding: 1rem 1rem;
+  margin: 2rem 2rem;
+  border-radius: 6px;
+  box-shadow: 5px 5px 2px rgba(255, 255, 255, 0.2);
+  font-size: 1.5rem;
+  background-color: goldenrod;
+  color: white;
+  text-align: left;
+}
+
+/* For Obstacle and Acceleration only */
+.answer-box {
+  width: 90rem;
+  height: 2rem;
+  background-color: bisque;
+  color: black;
+}
+
+.mc-answer {
+  /* width: 5rem; */
+  padding: 1rem 0;
+  margin: 2rem 25rem;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+}
+
+
+/*TECHNICIAN - ALL ROUNDS*/
+
+.header-technician {
+  margin-bottom: 13rem;
+}
+
+.technician-management-home {
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: -6.5rem;
+  border: 5px solid gray;
+  background-color: black;
+  padding: 1rem;
+  color: gray;
+  border-radius: 15px;
+  font-family: "Shrikhand", serif;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.technician-management-home:hover {
+  background-color: white;
+  text-decoration: none;
+}
+
+.quit {
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: -6.5rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  border-radius: 15px;
+  font-family: "Shrikhand", serif;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: brown;
+  color: white;
+  border: 5px solid white;
+}
+
+.quit:hover {
+  background-color: rgb(212, 56, 56);
+  text-decoration: none;
+}
+
+.score {
+  background-color: goldenrod;
+  color: black;
+  position: relative;
+  right: 2rem;
+}
+
+.score:hover {
+  background-color: gold;
+}
+
+.management-buttons {
+  list-style: none;
+  position: relative;
+  top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 20rem);
+  justify-content: center;
+}
+
+.management-buttons li {
+  display: inline;
+  font-family: "Shrikhand", serif;
+  font-size: 28px;
+  border: 5px solid white;
+  border-radius: 25px;
+  background-color: green;
+  text-decoration: none;
+  padding: 1.5rem;
+  box-shadow: 5px 5px white;
+  margin: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+.management-buttons a {
+  color: white;
+}
+
+.management-buttons a:hover {
+  text-decoration: none;
+  background-color: darkgreen;
+}
+
+.management-buttons li:hover {
+  text-decoration: none;
+  background-color: darkgreen;
+  cursor: pointer;
+}
+
+.player-score {
+  font-size: 1rem;
+  padding: 0 2rem;
+}
+
+.name-and-score {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30rem;
+  margin: 1rem;
+  border-radius: 6px;
+  background-color: green;
+  border: 0.1rem solid white;
+}
+
+/* To set properties for the name */
+.name-and-score h3 {
+  padding: 0.2rem;
+  margin: 1rem 1rem;
+  color: white;
+}
+
+/* To set properties for the score */
+.name-and-score p {
+  width: 4rem;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 6px;
+  background-color: blue;
+  color: white;
+}
+
+.name-and-score a {
+  width: 4rem;
+  padding: 0.5rem;
+  margin: 0 1rem;
+  margin-left: -20rem;
+  border-radius: 6px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.name-and-score a {
+  margin-left: -20rem;
+}
+
+.name-and-score .bell {
+color: black;
+background-color: white;
+padding: 0.5rem 0;
+margin-left: -20rem;
+}
+
+.name-and-score .bell:hover {
+background-color: wheat;
+}
+
+.next-question {
+border: 5px solid gray;
+background-color: black;
+padding: 0.7rem;
+color: gray;
+border-radius: 20px;
+font-family: "Shrikhand", serif;
+font-size: 24px;
+cursor: pointer;
+}
+
+.next-question:hover {
+text-decoration: none;
+background-color: white;
+}
+
+.name-and-score a:hover {
+  text-decoration: none;
+}
+
+.name-and-score .incorrect {
+  margin-left: -24rem;
+  background-color: red;
+}
+
+.name-and-score .incorrect:hover {
+  margin-left: -24rem;
+  background-color: brown;
+}
+
+.name-and-score .correct {
+  color: black;
+  background-color: goldenrod;
+}
+
+.name-and-score .correct:hover {
+  background-color: gold;
+}
+
+.name-and-score .bonus5 {
+  margin-left: -24rem;
+}
+
+.name-and-score .bonus5:hover {
+  background-color: darkblue;
+}
+
+

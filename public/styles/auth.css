@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+  color: rgb(99, 92, 86);
+}
+
+form {
+  max-width: 25rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: rgb(32, 29, 26);
+  border-radius: 6px;
+  text-align: center;
+}
+
+form a {
+  color: rgb(250, 191, 143);
+}
+
+form a:hover,
+form a:active {
+  color: rgb(223, 159, 41);
+}

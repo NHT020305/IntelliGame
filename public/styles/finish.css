@@ -1,0 +1,49 @@
+#player-score {
+  font-size: 1rem;
+  padding: 0 2rem;
+}
+
+.name-and-score {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30rem;
+  margin: 0.5rem;
+  border-radius: 6px;
+  background-color: green;
+}
+
+/* To set properties for the name */
+.name-and-score h3 {
+  padding: 0.2rem;
+  margin: 1rem 1rem;
+}
+
+/* To set properties for the score */
+.name-and-score p {
+  width: 4rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0.5rem;
+  border-radius: 6px;
+  background-color: blue;
+  color: white;
+}
+
+#question-points {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 2rem 2rem;
+  color: aqua;
+}
+
+#question-points p {
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  background-color: blue;
+}
+
+.h1-finish-player-mc {
+  margin-bottom: 4rem;
+}

@@ -1,0 +1,55 @@
+<%- include('shared/includes/head') %>
+    <title>Home | IntelliGame</title>
+    <link rel="stylesheet" href="styles/shared.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <script src="scripts/about.js" defer></script>
+  </head>
+  <body>
+    <%- include('shared/includes/header-base') %>
+    <main>
+      <img src="/images/IntelliGAME.png" alt="game" />
+      <!--<h1>I N T E L L I G A M E</h1>-->
+      <p>
+        A platform that emulates <strong>Road to Mount Olympia</strong>'s format
+        for ambitious students!
+      </p>
+      <ul>
+        <li>
+          <a href="/warmup-player" class="join">Join as PLAYER</a>
+        </li>
+        <li><a href="/warmup-mc" class="join">Join as MC</a></li>
+        <li>
+          <% if (! locals.isAuth) { %>
+            <a href="/signup" class="join"
+            >Join as TECHNICIAN</a
+          >
+          <% } else { %>
+          <a href="/technician-main" class="join"
+            >Join as TECHNICIAN</a
+          >
+          <% } %>
+        </li>
+      </ul>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <!--<a href="https://www.facebook.com/"
+            ><img src="/images/facebook_1384005.png"
+          /></a>-->
+        </li>
+        <li>
+          <!--<a href="https://www.facebook.com/"
+            ><img src="/images/insta.png"
+          /></a>-->
+        </li>
+        <li>
+          <!--<a href="https://www.facebook.com/"
+            ><img src="/images/youtube-512.webp"
+          /></a>-->
+        </li>
+      </ul>
+      <p>Orbital 2024 - 2P1G5</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  background-image: url("/images/all-rounds-background.jpg");
+  background-size: cover;
+  text-align: center;
+}
+
+main {
+  background-image: none;
+}
+
+header {
+  position: relative;
+  top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 20rem);
+  justify-content: left;
+  gap: 16rem;
+  margin-bottom: 0;
+}
+
+#logo {
+  font-size: 48px;
+}
+
+header #logo {
+  color: white;
+  margin-left: 20px;
+}
+
+header .button-header {
+  display: inline-block;
+  margin-right: 20px;
+  border: 5px solid gray;
+  background-color: black;
+  padding: 1rem;
+  color: gray;
+  border-radius: 10px;
+  font-family: "Shrikhand", serif;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+header .button-header:hover {
+  text-decoration: none;
+  background-color: white;
+}
+
+#upload {
+  background-color: darkgreen;
+  color: white;
+  border: 5px solid blue;
+}
+
+#upload:hover {
+  background-color: green;
+}
+
+#back {
+  width: 6.5rem;
+  height: 3.5rem;
+  margin-left: 5rem;
+};
+
+
+main {
+  background-image: none;
+}
+
+#test-list {
+  margin-top: 7rem;
+  display: inline-block;
+  list-style: none;
+}
+
+.test-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70rem;
+  margin: 0.5rem;
+  margin-bottom: 2rem;
+  border-radius: 6px;
+  background-color: green;
+  border: 0.1rem solid white;
+}
+
+.test-item h3 {
+  padding: 0.2rem;
+  margin: 1rem 1rem;
+  color: white;
+}
+
+.test-item p {
+  width: 4rem;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 6px;
+  background-color: blue;
+  color: white;
+}
+
+.test-item a,
+.test-item .delete {
+  padding: 0.5rem;
+  border-radius: 6px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.test-item .delete {
+  width: 7rem;
+}
+
+.edit:hover,
+.delete:hover {
+  text-decoration: none;
+  background-color: darkblue;
+}
+
+#test-list {
+  list-style: none;
+  margin-bottom: 8rem;
+}
+
+.test-information {
+  margin-top: 2rem;
+}
+
+.test-information label {
+  color: gold;
+  font-size: 36px;
+}
+
+.test-information input,
+.test-information textarea {
+  background-color: goldenrod;
+  width: 25rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-left: -3.5rem;
+  font-size: 24px;
+  border-radius: 0.5rem;
+  font-family: "Nunito", sans-serif;
+}
+
+.test-information textarea {
+  width: 40rem;
+}
+
+.test-item .button-test {
+  display: grid;
+  grid-template-columns: repeat(2, 7rem);
+  justify-content: right;
+  gap: 1rem;
+  margin-right: 1rem;
+}

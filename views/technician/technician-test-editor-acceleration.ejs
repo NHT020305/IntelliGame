@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/images/favicon1.ico" type="images/x-icon" />
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <link rel="stylesheet" href="/styles/technician-upload.css" />
+    <link
+      rel="stylesheet"
+      href="/styles/technician-test-editor-acceleration.css"
+    />
+    <link rel="stylesheet" href="/styles/forms.css">
+    <script src="/scripts/file-preview.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <a href="/" id="logo">IntelliGame</a>
+      <h1 class="test-name-display"><%= test.name %></h1>
+      <a
+        href="/technician-upload/<%= test._id %>"
+        class="button-header"
+        id="back"
+        >Back</a
+      >
+    </header>
+    <main>
+      <form
+        id="upload-questions"
+        action="/technician-upload/<%= test._id %>/acceleration"
+        enctype="multipart/form-data"
+        method="POST"
+      >
+        <input type="hidden" name="_csrf" value="<%= locals.csrfToken %>" />
+        <h2 class="round-name-display">Acceleration round</h2>
+        <p class="questions-information">
+          <label for="question">Question:</label>
+          <textarea
+            type="question"
+            id="question"
+            name="question"
+            required
+            rows="3"
+          ></textarea>
+        </p>
+        <p class="questions-information">
+          <label for="answer">Answer:</label>
+          <textarea
+            type="answer"
+            id="answer"
+            name="answer"
+            required
+            rows="3"
+          ></textarea>
+        </p>
+        <p class="questions-information">
+          <label for="fileUpload">Question picture</label>
+          <input type="file" name="fileUpload" id="fileUpload" required accept="image/*">
+          <img id="image-preview" src="" alt="Question picture">
+        </p>
+        <button type="submit"class="btn"  id="add-question">
+          Add QUESTION
+        </button>
+      </form>
+      <ul id="test-list">
+        <% for (const question of questions) { %> <%-
+        include('../shared/includes/acceleration-question-item.ejs', { question :
+        question }) %> <% } %>
+      </ul>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<li>
+  <div class="question-item">
+    <h3><%= question.content %></h3>
+    <p><%= question.answer %></p>
+    <img class="match-image" src='/<%= question.imagePath %>' alt="Match photo">
+    <section class="button-test">
+      <form action="/technician-upload/<%= test._id %>/acceleration/<%= question._id %>/delete" method="POST">
+        <input type="hidden" name="_csrf" value="<%= locals.csrfToken %>">
+        <button class="delete">Delete</button>
+      </form>
+    </section>
+  </div>
+</li>

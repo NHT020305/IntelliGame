@@ -1,0 +1,12 @@
+<li>
+  <div class="test-item">
+    <h3><%= test.name %></h3>
+    <section class="button-test">
+      <a class="edit" href="/technician-upload/<%= test._id %>">Edit</a>
+      <form action="/technician-upload/<%= test._id %>/delete" method="POST">
+        <input type="hidden" name="_csrf" value="<%= locals.csrfToken %>">
+        <button class="delete">Delete</button>
+      </form>
+    </section>
+  </div>
+</li>

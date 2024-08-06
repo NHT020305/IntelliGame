@@ -1,0 +1,26 @@
+/* .player {
+  list-style: none;
+  color: blue;
+  padding: 0;
+  margin: 2rem;
+} */
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem;
+  color: white;
+}
+
+#answer-btn-mc-warmup {
+  margin-bottom: -1rem;
+}
+
+.h1-warmup-player-mc {
+  margin-bottom: 4rem;
+}
+
+.answer-btn {
+  margin-top: 1rem;
+}
+
