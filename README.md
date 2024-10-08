@@ -1,4 +1,4 @@
-# Orbital24 - 2P1G5
+# National University of Singapore - Orbital24 - 2P1G5 
 
 ## Proposed level of achievement
 Project Gemini
