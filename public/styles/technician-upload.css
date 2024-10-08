@@ -5,18 +5,17 @@ body {
   text-align: center;
 }
 
-main {
-  background-image: none;
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 20rem);
+  justify-content: center;
+  align-items: center;
+  gap: 46rem;
+  margin-top: 3rem;
 }
 
-header {
-  position: relative;
-  top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(3, 20rem);
-  justify-content: left;
-  gap: 16rem;
-  margin-bottom: 0;
+main {
+  background-image: none;
 }
 
 #logo {
@@ -47,13 +46,18 @@ header .button-header:hover {
 }
 
 #upload {
-  background-color: darkgreen;
+  font-family: "Shrikhand", serif;
+  font-size: 28px;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 30rem;
+  background-color: goldenrod;
   color: white;
-  border: 5px solid blue;
 }
 
 #upload:hover {
-  background-color: green;
+  background-color: darkgoldenrod;
 }
 
 #back {
@@ -68,7 +72,8 @@ main {
 }
 
 #test-list {
-  margin-top: 7rem;
+  margin-top: -1rem;
+  margin-left: -3rem;
   display: inline-block;
   list-style: none;
 }
@@ -78,7 +83,6 @@ main {
   align-items: center;
   justify-content: space-between;
   width: 70rem;
-  margin: 0.5rem;
   margin-bottom: 2rem;
   border-radius: 6px;
   background-color: green;
@@ -120,29 +124,23 @@ main {
   background-color: darkblue;
 }
 
-#test-list {
-  list-style: none;
-  margin-bottom: 8rem;
-}
-
-.test-information {
-  margin-top: 2rem;
-}
-
 .test-information label {
-  color: gold;
-  font-size: 36px;
+  display: block;
+  color: black;
+  font-size: 48px;
+  font-family: "Nunito", sans-serif;
 }
 
 .test-information input,
 .test-information textarea {
-  background-color: goldenrod;
-  width: 25rem;
+  background-color: white;
+  width: 40rem;
   padding: 0.5rem;
   margin-top: 0.5rem;
-  margin-left: -3.5rem;
+  margin-bottom: 3rem;
   font-size: 24px;
   border-radius: 0.5rem;
+  border: none;
   font-family: "Nunito", sans-serif;
 }
 
@@ -156,4 +154,23 @@ main {
   justify-content: right;
   gap: 1rem;
   margin-right: 1rem;
+}
+
+#upload-test {
+  display: inline-block;
+  background-color: wheat;
+  padding: 3rem;
+  margin-top: 5rem;
+  width: 65rem;
+  border-radius: 1rem;
+}
+
+#uploaded-test-title {
+  font-family: "Shrikhand", serif;
+  font-size: 54px;
+  color: white;
+}
+
+#test-list-section {
+  margin-top: 8rem;
 }

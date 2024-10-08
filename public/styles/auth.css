@@ -1,6 +1,7 @@
 h1 {
   text-align: center;
-  color: white
+  color: white;
+  font-family: "Shrikhand", serif;
 }
 
 body {
@@ -22,6 +23,7 @@ main {
 }
 
 form {
+  font-family: "Nunito", sans-serif;
   max-width: 25rem;
   margin: 2rem auto;
   padding: 1rem;

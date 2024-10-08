@@ -37,7 +37,7 @@ header #back:hover {
 #round-management {
   list-style: none;
   position: relative;
-  top: 1rem;
+  top: 5rem;
   display: grid;
   grid-template-columns: repeat(2, 40rem);
   grid-template-rows: repeat(2, 14rem);
@@ -70,16 +70,5 @@ main {
   font-size: 72px;
   color: gold;
   width: 30rem;
-  margin-left: -5rem;
-}
-
-#header-test-editor {
-  position: relative;
-  top: -1rem;
-  display: grid;
-  grid-template-columns: repeat(3, 18rem);
-  justify-content: center;
-  gap: 16rem;
-  margin-bottom: 0;
-  align-items: center;
+  margin-left: -4rem;
 }

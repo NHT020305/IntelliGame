@@ -15,23 +15,7 @@
     <title>Technician page | IntelliGame</title>
   </head>
   <body>
-    <header>
-      <a href="/" id="logo">IntelliGame</a>
-      <nav>
-        <ul>
-          <li><a href="/about">About</a></li>
-          <li><a href="/about">Explore</a></li>
-          <% if (locals.isAuth) { %>
-            <li>
-              <form action="/logout" method="POST">
-                <input type="hidden" name="_csrf" value="<%= locals.csrfToken %>" />
-                <button>Logout</button>
-              </form>
-            </li>
-          <% } %>
-        </ul>
-      </nav>
-    </header>
+    <%- include('../shared/includes/header-base') %>
     <main>
       <ul>
         <li>

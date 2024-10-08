@@ -3,6 +3,7 @@ const bcrypt = require("bcryptjs");
 const db = require("../data/database");
 
 class User {
+  
   constructor(email, password, fullname) {
     this.email = email;
     this.password = password;

@@ -11,30 +11,39 @@
     />
     <link rel="icon" href="/images/favicon1.ico" type="images/x-icon" />
     <link rel="stylesheet" href="/styles/shared.css" />
-    <link
-      rel="stylesheet"
-      href="/styles/technician-upload.css"
-    />
+    <link rel="stylesheet" href="/styles/technician-upload.css" />
     <title>Document</title>
   </head>
   <body id="body-upload">
     <header>
       <a href="/" id="logo">IntelliGame</a>
-      <form id="upload-test" action="/technician-upload" method="POST">
-        <input type="hidden" name="_csrf" value="<%= locals.csrfToken %>">
-        <button type="submit" class="button-header" id="upload">Add TEST</button>
-        <p class="test-information">
-          <label for="testName">Test name:</label>
-          <input type="testName" id="testName" name="testName" maxlength="8" required />
-        </p>
-      </form>
       <a href="/technician-main" class="button-header" id="back">Back</a>
     </header>
     <main>
-      <ul id="test-list">
-        <% for (const test of tests) { %> <%-
-        include('../shared/includes/test-item.ejs', { test : test }) %> <% } %>
-      </ul>
+      <form id="upload-test" action="/technician-upload" method="POST">
+        <input type="hidden" name="_csrf" value="<%= locals.csrfToken %>" />
+        <p class="test-information">
+          <label for="testName">Test name:</label>
+          <input
+            type="testName"
+            id="testName"
+            name="testName"
+            maxlength="8"
+            required
+          />
+        </p>
+        <button type="submit" class="button-header" id="upload">
+          Add TEST
+        </button>
+      </form>
+      <section id="test-list-section">
+        <h1 id="uploaded-test-title">UPLOADED TESTS</h1>
+        <ul id="test-list">
+          <% for (const test of tests) { %> <%-
+          include('../shared/includes/test-item.ejs', { test : test }) %> <% }
+          %>
+        </ul>
+      </section>
     </main>
   </body>
 </html>

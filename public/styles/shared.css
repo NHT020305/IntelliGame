@@ -10,29 +10,38 @@ body {
 }
 
 header {
-  margin: 50px;
-  margin-bottom: 0;
+  margin: 100px;
+  margin-bottom: 15px;
   margin-top: 15px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items: top;
   justify-content: space-between;
+  align-items: center;
+}
+
+.header-special {
+  display: grid;
+  grid-template-columns: repeat(2, 25rem);
+  justify-content: center;
+  align-items: center;
+  gap: 40rem;
 }
 
 header ul {
   border-radius: 50px;
   list-style-type: none;
-  padding: 0.5rem 1rem 0.3rem 0.1rem;
+  padding: 0.5rem 0.5rem 0.5rem 0;
   margin-bottom: 0px;
   border: solid white;
   background-color: white;
-  margin-left: 400px;
   margin-top: 0;
+  width: 25rem;
   display: grid;
   grid-template-columns: repeat(3, 7rem);
   justify-content: center;
   gap: 0.5rem;
+  align-items: center;
 }
 
 header li {
@@ -50,7 +59,7 @@ header nav button {
 }
 
 header nav button {
-  margin-top: -1rem;
+  width: 6rem;
   border: none;
   background-color: white;
   text-decoration: none;
@@ -199,6 +208,8 @@ footer p {
   background-color: rgb(255, 192, 180);
   color: rgb(199, 51, 15);
   padding: 1rem;
+  width: 30rem;
+  display: inline-block
 }
 
 .alert h2 {
@@ -232,4 +243,15 @@ footer p {
   font-family: "Nunito", sans-serif;
   font-size: 24px;
   word-wrap: break-word;
+}
+
+.header-test-editor {
+  position: relative;
+  margin-top: -1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 20rem);
+  justify-content: center;
+  gap: 13rem;
+  margin-bottom: 0;
+  align-items: center;
 }
