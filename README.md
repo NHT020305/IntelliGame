@@ -2,7 +2,7 @@
 
 ## Proposed level of achievement
 Project Gemini 
-### Credential: https://drive.google.com/file/d/1PJsPiewI0aTekM3cljEEGtqLI2A0Ghqr/view?usp=sharing
+My credential: https://drive.google.com/file/d/1PJsPiewI0aTekM3cljEEGtqLI2A0Ghqr/view?usp=sharing
 
  
 ## Motivation
