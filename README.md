@@ -32,11 +32,7 @@ A website emulating the RtMO's format for students to self-organize online and o
 
  
 ## Tech Stacks
-HTML
-CSS
-JavaScript
-Node.js
-MongoDB
+HTML | CSS | JavaScript | Node.js | MongoDB
 
 
 ## Documentation link
