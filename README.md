@@ -2,7 +2,7 @@
 
 ## Proposed level of achievement
 Project Gemini 
-### Credential: https://api.accredible.com/v1/auth/invite?code=4559b8cdf435658df50f&credential_id=279c9c9c-7268-4abf-ac86-d35e5142fa58&url=https%3A%2F%2Fcredentials.nus.edu.sg%2F279c9c9c-7268-4abf-ac86-d35e5142fa58&ident=a04f35fe-c814-40c1-9466-4a50d25633b1
+### Credential: https://drive.google.com/file/d/1PJsPiewI0aTekM3cljEEGtqLI2A0Ghqr/view?usp=sharing
 
  
 ## Motivation
